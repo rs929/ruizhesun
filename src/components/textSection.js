@@ -19,7 +19,7 @@ const TextSection = () => {
             </div>
             <div className='imageCollection'>
                 <img id='img1' src={profileImage}></img>
-                <img id='img2' src={me2}></img>
+                <img id='img2' alt='Credit: Noelle Pappous' src={me2}></img>
                 <img id='img3' src={cornell}></img>
             </div>
         </section>

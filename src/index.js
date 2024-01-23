@@ -7,12 +7,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-render(
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <BrowserRouter>
     <GlobalStyle />
     <App />
-  </BrowserRouter>,
-  document.querySelector("#root")
-)
+  </BrowserRouter>
+);
 
 reportWebVitals();

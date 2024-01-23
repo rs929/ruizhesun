@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import GlobalStyle from '../GlobalStyle';
 import { MdClose, MdMenu } from 'react-icons/md'
 import './NavBar.css'
 
@@ -11,7 +10,8 @@ export default function NavBar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setSticky(window.scrollY > 50);
+            setSticky(window.scrollY > 100);
+            console.log("STICK!")
         }
 
         window.addEventListener("scroll", handleScroll);
