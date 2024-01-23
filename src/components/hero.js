@@ -18,8 +18,9 @@ const Hero = () => {
     return (
         <section id='hero'>
             <div className='heroContent'>
-                <span className='hello'>Hello, My name is</span><br />
-                <span className='introText'>Ruizhe Sun</span>
+                <p className='hello'>Hello, My name is</p>
+                <p className='introText'>Ruizhe Sun</p>
+                <br></br>
                 <p className='introPara'>I am a current Junior studying Computer Science and minoring in Data Science at <span className='cornell'>Cornell University</span> with experience in Full-Stack Web and Mobile Development.</p>
                 <span className='experience1'></span>
             </div>
