@@ -16,11 +16,12 @@ h1 {
     float: left;
     border-radius: 20%;
     padding-bottom: 4px;
-    text-align: left
+    text-align: left;
 }
 
 .content {
     position: relative;
+    width: 50vw;
 }
 
 p {
@@ -30,7 +31,7 @@ p {
 
 .imageCollection {
     margin-left: 5%;
-    width: 400%;
+    width: 50vw;
     position: relative;
 
     img {
@@ -71,19 +72,47 @@ p {
 
     #header {
         margin: auto;
-        padding: 10%;
+        padding: 5%;
         flex-direction: column;
         align-items: center;
         align-self: center;
     }
 
+    .content {
+        position: relative;
+        width: 80vw;
+    }
+
     .imageCollection {
-        width: 400%;
+        width: 50vw;
         align-content: center;
         margin: auto;
+        margin-left: 0;
+        margin-top: 10%;
+        background-color: red;
 
         img {
             border-radius: 50%;
         }
+    }
+
+    #img1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 210px;
+    }
+
+    #img2 {
+        position: absolute;
+        width: 250px;
+        top: 125px;
+        left: 210px;
+    }
+
+    #img3 {
+        width: 180px;
+        top: 250px;
+        left: 20px;
     }
 }
