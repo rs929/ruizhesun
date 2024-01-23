@@ -1,0 +1,79 @@
+#hero {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    padding-top: 25%;
+    padding-bottom: 20%;
+    height: 100vh;
+    background: linear-gradient(#9198E5, white);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.shown {
+    opacity: 1;
+}
+
+.heroContent {
+    max-width: 40rem;
+    align-content: center;
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+
+.profile {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    animation: fadeInRight;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.cornell {
+    color: #B31B1B;
+    font-weight: 500;
+}
+
+.hello {
+    font-size: 2rem;
+}
+
+.introText {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.introPara {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 999px) {
+    
+    .hello {
+        font-size: 1.5rem;
+    }
+    
+    .introText {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .introPara {
+        font-size: 1rem;
+    }
+
+    .profile {
+        min-width: 150px;
+        min-height: 150px;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+}
