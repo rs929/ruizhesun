@@ -20,7 +20,7 @@
     max-width: 40rem;
     align-content: center;
     animation: fadeInDown;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     margin-right: 5%;
 }
 
@@ -29,8 +29,8 @@
     height: 20vw;
     border-radius: 50%;
     animation: fadeInRight;
-    animation-duration: 1s;
-    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .cornell {

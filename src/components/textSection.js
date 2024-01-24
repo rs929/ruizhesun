@@ -1,13 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './textSection.css'
 import profileImage from '../assets/profile1.jpg'
 import cornell from '../assets/cornell.jpg'
 import me2 from '../assets/me2.jpg'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const aboutAnimation = {
+    visible: { opacity: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0 },
+}
 
 const TextSection = () => {
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        }
+    }, [control, inView]);
 
     return (
-        <section id='header'>
+        <motion.section ref={ref}
+            variants={aboutAnimation}
+            initial="hidden"
+            whileInView="visible" id='header'>
             <div className='content'>
                 <h1 className='underline'>About Me</h1>
                 <br></br>
@@ -25,7 +43,7 @@ const TextSection = () => {
                 <img id='img2' alt='Credit: Noelle Pappous' src={me2}></img>
                 <img id='img3' src={cornell}></img>
             </div>
-        </section>
+        </motion.section>
     )
 
 }

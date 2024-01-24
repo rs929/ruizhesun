@@ -6,6 +6,10 @@ import LanugageSection from './components/languages';
 import LanguageGallery from './components/languages2';
 import SkillsSection from './components/skillsSection';
 import TextSection from './components/textSection';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import ProjectsSection from './components/projects';
 
 function App() {
   return (
@@ -27,6 +31,11 @@ function App() {
         <br></br>
         <ExperienceSection />
       </section>
+
+      <section id='projects'>
+        <ProjectsSection />
+      </section>
+
 
     </div>
   );
