@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
 import { MdClose, MdMenu } from 'react-icons/md'
 import './NavBar.css'
+import { Link } from 'react-scroll'
+import Resume from '../assets/Ruizhe-Sun-Resume.pdf'
 
 
 export default function NavBar() {
@@ -32,19 +33,20 @@ export default function NavBar() {
                 <div className='close-menu-icon' onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)} tabIndex={0}>
                     <MdClose />
                 </div>
+
                 <li>
-                    <NavLink to="/" exact onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)} tabIndex={0}>Home</NavLink>
+                    <Link activeClass="active" smooth spy to="about" onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)}>About</Link>
                 </li>
                 <li>
-                    <NavLink to="/about" onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)} tabIndex={0}>About</NavLink>
+                    <Link activeClass="active" smooth spy to="experience" onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)}>Experience</Link>
                 </li>
                 <li>
-                    <NavLink to="/projects" onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)} tabIndex={0}>Projects</NavLink>
+                    <Link activeClass="active" smooth spy to="projects" onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)}>Projects</Link>
                 </li>
                 <li>
-                    <NavLink to="/contact" onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)} tabIndex={0}>Contact</NavLink>
+                    <a href={Resume} target="_blank" onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)}>Resume</a>
                 </li>
             </ul>
-        </nav>
+        </nav >
     )
 }

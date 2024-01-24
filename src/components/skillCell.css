@@ -1,0 +1,22 @@
+#cell {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  align-items: center;
+
+  p {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  img {
+    height: 6rem;
+    margin-bottom: 5%;
+  }
+}
+
+
+
+h2 {
+  text-decoration: none;
+}

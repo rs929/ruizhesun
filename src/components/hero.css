@@ -21,16 +21,13 @@
     align-content: center;
     animation: fadeInDown;
     animation-duration: 1s;
+    margin-right: 5%;
 }
 
 .profile {
-    width: 30%;
-    height: auto;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
-    min-width: 250px;
-    min-height: 250px;
-    max-width: 250px;
-    max-height: 250px;
     animation: fadeInRight;
     animation-duration: 1s;
     animation-delay: 1s;

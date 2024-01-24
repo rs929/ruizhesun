@@ -1,0 +1,93 @@
+.technologies {
+  margin-top: 0;
+  perspective: 2000px;
+  padding-top: 150px;
+}
+
+.carousel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  transform-style: preserve-3d;
+  animation: roter 60s linear infinite;
+}
+
+@keyframes roter {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.icon {
+  position: absolute;
+  height: 100%;
+  background-color: white;
+  border-radius: 10%;
+}
+
+.icon svg {
+  height: 100%;
+  width: 100%;
+  transition: all 3s ease;
+}
+
+.icon:first-child {
+  transform: rotateY(calc(30deg * 1)) translateZ(400px);
+}
+
+.icon:nth-child(2) {
+  transform: rotateY(calc(30deg * 2)) translateZ(400px);
+}
+
+.icon:nth-child(3) {
+  transform: rotateY(calc(30deg * 3)) translateZ(400px);
+}
+
+.icon:nth-child(4) {
+  transform: rotateY(calc(30deg * 4)) translateZ(400px);
+}
+
+.icon:nth-child(5) {
+  transform: rotateY(calc(30deg * 5)) translateZ(400px);
+}
+
+.icon:nth-child(6) {
+  transform: rotateY(calc(30deg * 6)) translateZ(400px);
+}
+
+.icon:nth-child(7) {
+  transform: rotateY(calc(30deg * 7)) translateZ(400px);
+}
+
+.icon:nth-child(8) {
+  transform: rotateY(calc(30deg * 8)) translateZ(400px);
+}
+
+.icon:nth-child(9) {
+  transform: rotateY(calc(30deg * 9)) translateZ(400px);
+}
+
+.icon:nth-child(10) {
+  transform: rotateY(calc(30deg * 10)) translateZ(400px);
+}
+
+.icon:nth-child(11) {
+  transform: rotateY(calc(30deg * 11)) translateZ(400px);
+}
+
+.icon:nth-child(12) {
+  transform: rotateY(calc(30deg * 12)) translateZ(400px);
+}
+
+@media only screen and (max-width: 999px) {
+  .technologies {
+    display: none;
+  }
+}

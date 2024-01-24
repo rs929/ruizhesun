@@ -18,8 +18,8 @@ const Hero = () => {
     return (
         <section id='hero'>
             <div className='heroContent'>
-                <p className='hello'>Hello, My name is</p>
-                <p className='introText'>Ruizhe Sun</p>
+                <p className='hello' style={{ color: 'black' }}>Hello, My name is</p>
+                <p className='introText' style={{ color: 'black' }}>Ruizhe Sun</p>
                 <br></br>
                 <p className='introPara'>I am a current Junior studying Computer Science and minoring in Data Science at <span className='cornell'>Cornell University</span> with experience in Full-Stack Web and Mobile Development.</p>
                 <span className='experience1'></span>
