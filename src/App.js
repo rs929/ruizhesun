@@ -34,6 +34,9 @@ function App() {
 
       <section id='projects'>
         <ProjectsSection />
+        <h3>--------------WORK IN PROGRESS--------------</h3>
+        <br></br><br></br>
+        <br></br><br></br>
       </section>
 
 
