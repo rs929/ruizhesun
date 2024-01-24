@@ -1,0 +1,9 @@
+#experiences {
+  margin: 10% 15%;
+}
+
+#expCells {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

@@ -1,5 +1,6 @@
 .technologies {
   margin-top: 0;
+  margin-bottom: 10%;
   perspective: 2000px;
   padding-top: 150px;
 }
@@ -26,6 +27,7 @@
 }
 
 .icon {
+  z-index: 0;
   position: absolute;
   height: 100%;
   background-color: white;

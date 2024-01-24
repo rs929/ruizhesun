@@ -1,0 +1,37 @@
+.expCell {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px black solid;
+  box-shadow: 4px 4px 4px #9198E5;
+
+  img {
+    width: 180px;
+    height: 180px;
+    margin: 2%;
+  }
+}
+
+.expContent {
+  margin: 2%;
+
+  #title {
+    font-weight: bold;
+    color: black;
+    font-size: 24px;
+  }
+
+  #org {
+    color: black;
+    font-size: 22px;
+  }
+
+  #date {
+    color: black;
+    font-size: 22px;
+  }
+
+  #text {
+    font-size: 20px;
+  }
+}

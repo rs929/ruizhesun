@@ -22,10 +22,9 @@ function App() {
         <LanguageGallery />
         <LanugageSection />
       </section>
-      <br></br>
-      <br></br>
 
       <section id='experience'>
+        <br></br>
         <ExperienceSection />
       </section>
 
