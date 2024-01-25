@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './experiences.css'
 import ExperienceCell from './experienceCell';
-import AppDev from '../assets/AppDev.png'
-import LLounge from '../assets/llounge.svg'
-import Cornell from "../assets/cornell.png"
+import AppDev from '../../assets/AppDev.png'
+import LLounge from '../../assets/llounge.svg'
+import Cornell from "../../assets/cornell.png"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

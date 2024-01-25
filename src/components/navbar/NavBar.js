@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MdClose, MdMenu } from 'react-icons/md'
 import './NavBar.css'
 import { Link } from 'react-scroll'
-import Resume from '../assets/Ruizhe-Sun-Resume.pdf'
+import Resume from '../../assets/Ruizhe-Sun-Resume.pdf'
 
 
 export default function NavBar() {

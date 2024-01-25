@@ -1,15 +1,15 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import ExperienceSection from './components/experiences';
-import Hero from './components/hero';
-import LanugageSection from './components/languages';
-import LanguageGallery from './components/languages2';
-import SkillsSection from './components/skillsSection';
-import TextSection from './components/textSection';
+import NavBar from './components/navbar/NavBar';
+import ExperienceSection from './components/experiences/experiences';
+import Hero from './components/hero/hero';
+import LanugageSection from './components/languages/languages';
+import LanguageGallery from './components/languages/languages2';
+import SkillsSection from './components/skills/skillsSection';
+import TextSection from './components/about/textSection';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import ProjectsSection from './components/projects';
+import ProjectsSection from './components/projects/projects';
 
 function App() {
   return (

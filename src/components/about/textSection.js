@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './textSection.css'
-import profileImage from '../assets/profile1.jpg'
-import cornell from '../assets/cornell.jpg'
-import me2 from '../assets/me2.jpg'
+import profileImage from '../../assets/profile1.jpg'
+import cornell from '../../assets/cornell.jpg'
+import me2 from '../../assets/me2.jpg'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

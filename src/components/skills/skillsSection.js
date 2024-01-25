@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './skillsSection.css'
 import SkillCell from './skillCell';
-import Web from "../assets/webdev.svg"
-import Mobile from "../assets/mobiledev.svg"
-import ML from "../assets/ml.svg"
+import Web from "../../assets/webdev.svg"
+import Mobile from "../../assets/mobiledev.svg"
+import ML from "../../assets/ml.svg"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

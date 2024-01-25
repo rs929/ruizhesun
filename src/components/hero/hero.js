@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './hero.css'
-import profileImage from '../assets/profile1.jpg'
+import profileImage from '../../assets/profile1.jpg'
 import 'animate.css'
 
 const Hero = () => {

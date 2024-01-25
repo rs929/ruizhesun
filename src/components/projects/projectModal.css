@@ -1,0 +1,7 @@
+.projectModal {
+  display: block;
+  margin: auto;
+  background-color: aqua;
+  width: 50%;
+  height: 50%;
+}
