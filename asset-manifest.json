@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/ruizhesun-portfolio/static/css/main.fceb3a63.css",
-    "main.js": "/ruizhesun-portfolio/static/js/main.020a6456.js",
-    "static/js/787.82373570.chunk.js": "/ruizhesun-portfolio/static/js/787.82373570.chunk.js",
-    "static/media/cornell.jpg": "/ruizhesun-portfolio/static/media/cornell.08646882568be11dc6ea.jpg",
-    "static/media/me2.jpg": "/ruizhesun-portfolio/static/media/me2.1dda4da1d05c10f826e7.jpg",
-    "static/media/scooped.png": "/ruizhesun-portfolio/static/media/scooped.30d6c86d92be8fed7877.png",
-    "static/media/Ruizhe-Sun-Resume.pdf": "/ruizhesun-portfolio/static/media/Ruizhe-Sun-Resume.8baff52cfdd2796ba47f.pdf",
-    "static/media/llounge.svg": "/ruizhesun-portfolio/static/media/llounge.9e32b46ac850e9f531493dbccf3a7560.svg",
-    "static/media/profile1.jpg": "/ruizhesun-portfolio/static/media/profile1.658402381016742cbcd0.jpg",
-    "static/media/cornell.png": "/ruizhesun-portfolio/static/media/cornell.38b41a9d981e2abad9e8.png",
-    "static/media/AppDev.png": "/ruizhesun-portfolio/static/media/AppDev.aff1b49e1042f43ed177.png",
-    "static/media/ml.svg": "/ruizhesun-portfolio/static/media/ml.51aa4d5ad6f33cbec18b96a63db7b33e.svg",
-    "static/media/mobiledev.svg": "/ruizhesun-portfolio/static/media/mobiledev.e5380339bcddb281e3d55dcad3c25929.svg",
-    "static/media/webdev.svg": "/ruizhesun-portfolio/static/media/webdev.b8d7563e2fd9fa29b99d080bad638df3.svg",
-    "index.html": "/ruizhesun-portfolio/index.html",
-    "main.fceb3a63.css.map": "/ruizhesun-portfolio/static/css/main.fceb3a63.css.map",
-    "main.020a6456.js.map": "/ruizhesun-portfolio/static/js/main.020a6456.js.map",
-    "787.82373570.chunk.js.map": "/ruizhesun-portfolio/static/js/787.82373570.chunk.js.map"
+    "main.css": "/ruizhesun/static/css/main.9264403c.css",
+    "main.js": "/ruizhesun/static/js/main.4bd46451.js",
+    "static/js/787.82373570.chunk.js": "/ruizhesun/static/js/787.82373570.chunk.js",
+    "static/media/cornell.jpg": "/ruizhesun/static/media/cornell.08646882568be11dc6ea.jpg",
+    "static/media/me2.jpg": "/ruizhesun/static/media/me2.1dda4da1d05c10f826e7.jpg",
+    "static/media/scooped.png": "/ruizhesun/static/media/scooped.30d6c86d92be8fed7877.png",
+    "static/media/Ruizhe-Sun-Resume.pdf": "/ruizhesun/static/media/Ruizhe-Sun-Resume.8baff52cfdd2796ba47f.pdf",
+    "static/media/llounge.svg": "/ruizhesun/static/media/llounge.9e32b46ac850e9f531493dbccf3a7560.svg",
+    "static/media/profile1.jpg": "/ruizhesun/static/media/profile1.658402381016742cbcd0.jpg",
+    "static/media/cornell.png": "/ruizhesun/static/media/cornell.38b41a9d981e2abad9e8.png",
+    "static/media/AppDev.png": "/ruizhesun/static/media/AppDev.aff1b49e1042f43ed177.png",
+    "static/media/ml.svg": "/ruizhesun/static/media/ml.51aa4d5ad6f33cbec18b96a63db7b33e.svg",
+    "static/media/mobiledev.svg": "/ruizhesun/static/media/mobiledev.e5380339bcddb281e3d55dcad3c25929.svg",
+    "static/media/webdev.svg": "/ruizhesun/static/media/webdev.b8d7563e2fd9fa29b99d080bad638df3.svg",
+    "index.html": "/ruizhesun/index.html",
+    "main.9264403c.css.map": "/ruizhesun/static/css/main.9264403c.css.map",
+    "main.4bd46451.js.map": "/ruizhesun/static/js/main.4bd46451.js.map",
+    "787.82373570.chunk.js.map": "/ruizhesun/static/js/787.82373570.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fceb3a63.css",
-    "static/js/main.020a6456.js"
+    "static/css/main.9264403c.css",
+    "static/js/main.4bd46451.js"
   ]
 }
