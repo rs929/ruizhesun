@@ -1,7 +1,109 @@
 .projectModal {
-  display: block;
-  margin: auto;
-  background-color: aqua;
-  width: 50%;
-  height: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(25, 26, 26, 0.776);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn;
+  animation-duration: 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.modalContainer {
+  width: 80vw;
+  height: 90vh;
+  background-color: white;
+  opacity: 1;
+  border-radius: 20px;
+  display: flex;
+  padding: 5%;
+
+  img {
+    width: 25vw;
+    height: 50vw;
+    max-height: 70vh;
+  }
+}
+
+.modalTextContent {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+  align-items: start;
+
+  #title {
+    text-align: left;
+    font-size: 28px;
+  }
+
+  #subtitle {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #date {
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  #skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    li {
+      color: white;
+      background-color: #9198e5;
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 20px;
+      border-radius: 50vw;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 999px) {
+  .modalTextContent {
+    #title {
+      text-align: left;
+      font-size: 28px;
+    }
+
+    #subtitle {
+      text-align: left;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .modalContainer {
+    width: 90vw;
+    height: 90vh;
+
+    img {
+      display: none;
+    }
+  }
 }

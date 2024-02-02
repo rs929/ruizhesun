@@ -21,10 +21,3 @@
     transition: 0.5s;
   }
 }
-
-#projectModal {
-  transition: 1s;
-  margin: auto;
-  width: 50%;
-  height: auto;
-}
