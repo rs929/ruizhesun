@@ -2,7 +2,7 @@
   margin-top: 0;
   margin-bottom: 10%;
   perspective: 2000px;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .carousel {
@@ -30,8 +30,8 @@
   z-index: 0;
   position: absolute;
   height: 100%;
-  background-color: white;
-  border-radius: 10%;
+  /* background-color: white; */
+  border-radius: 10px;
 }
 
 .icon svg {

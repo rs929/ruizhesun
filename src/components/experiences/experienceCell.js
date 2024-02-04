@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './experienceCell.css'
+import { FaLink } from "react-icons/fa";
 
 const ExperienceCell = ({ title, org, text, date, image }) => {
   return (
@@ -12,6 +13,7 @@ const ExperienceCell = ({ title, org, text, date, image }) => {
         <br></br>
         <p id='body'>{text}</p>
       </div>
+      <FaLink id='link'></FaLink>
     </div>
   )
 }

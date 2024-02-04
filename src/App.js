@@ -2,8 +2,6 @@ import './App.css';
 import NavBar from './components/navbar/NavBar';
 import ExperienceSection from './components/experiences/experiences';
 import Hero from './components/hero/hero';
-import LanugageSection from './components/languages/languages';
-import LanguageGallery from './components/languages/languages2';
 import SkillsSection from './components/skills/skillsSection';
 import TextSection from './components/about/textSection';
 import { motion, useAnimation } from "framer-motion";
@@ -12,6 +10,24 @@ import { useEffect } from "react";
 import ProjectsSection from './components/projects/projects';
 
 function App() {
+
+  const preloadImages = () => {
+    console.log("preloading");
+    const images = {};
+    var r = require.context("./assets/", false, /\.(png|jpe?g|svg)$/)
+    r.keys().forEach(item => {
+      images[item.replace("./", "")] = r(item);
+    });
+
+    Object.values(images).forEach(image => {
+      const img = new Image();
+      img.src = typeof image == "string" ? image : image.default
+    });
+  };
+
+  useEffect(() => {
+    preloadImages();
+  });
   return (
     <div className="App">
       <NavBar />
@@ -23,8 +39,6 @@ function App() {
       <section id='about'>
         <TextSection />
         <SkillsSection />
-        <LanguageGallery />
-        <LanugageSection />
       </section>
 
       <section id='experience'>

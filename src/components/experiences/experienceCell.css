@@ -1,10 +1,24 @@
 .expCell {
   display: flex;
+  position: relative;
   flex-direction: row;
   border-radius: 20px;
   border: 1px black solid;
-  box-shadow: 4px 4px 4px #9198E5;
+  box-shadow: 4px 4px 4px gray;
   min-height: 250px;
+  background-color: white;
+
+  &:hover {
+    scale: 1.04;
+    transition: 0.5s;
+  }
+
+  #link {
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    top: 10%;
+  }
 
   img {
     width: 190px;

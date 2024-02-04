@@ -6,7 +6,7 @@ const ProjectCell = ({ image, props }) => {
 
   return (
     <div className='projectCell'>
-      <img src={image}></img>
+      <img src={image} loading='lazy'></img>
     </div>
   )
 }

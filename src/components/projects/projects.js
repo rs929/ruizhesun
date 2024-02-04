@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { MdClose, MdMenu } from 'react-icons/md'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import './projects.css'
 import ProjectCell from './projectCell.js'
 import ProjectModal from './projectModal.js'
@@ -11,9 +13,22 @@ import PawCoachMockup from "../../assets/pawcoachMockup.png"
 import OScratchMockup from "../../assets/oscratchMockup.png"
 import AlienMockup from "../../assets/alienMockup.png"
 
+const projectAnimation = {
+  visible: { opacity: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0 },
+}
+
 const ProjectsSection = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [projectIndex, setProjectIndex] = useState(0);
+  const control = useAnimation()
+  const [ref, inView] = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+  }, [control, inView]);
 
   const updateModalVisible = (index) => {
     console.log("CLICK")
@@ -28,6 +43,8 @@ const ProjectsSection = () => {
   const closeModal = () => {
     setModalVisible(false)
   }
+
+
 
 
   const projects = [
@@ -67,9 +84,19 @@ const ProjectsSection = () => {
       title: "OScratch",
       image: OScratchMockup,
       date: "September 2023 - December 2023",
-      description: "PawCoach is a app designed for dog owners, trainers, and vets to help owners find the best trainer/vet suited for their dog, and to help trainers and vets find their clients. The app serves to inform users of behavioral traits, breeds, as well as proper documentation to best match them with their ideal trainer or vet.",
-      process: "I worked on PawCoach during the The Cornell SP23 Animal Health Hackathon. My contribution includes implementing the app's frontend which features: an articles view, dogs profile view, matches view, as well as a feed view where you can contact trainers/vets and even set up appointments or payment",
-      skills: ["OCaml", "RayLib"]
+      description: "OScratch is a computer application designed to introduce programming concepts in a fun and interactive way. Similar to Scratch, OScratch utilizes a drag-and-drop interface that empowers users, especially beginners and young learners, to easily create animated sequences by assembling colorful and intuitive code blocks, but was coded entirely using OCaml and Functional Programming Techniques.",
+      process: "I worked on OScratch as the Final Project for CS 3110: Functional Programming and Data Structures.",
+      skills: ["OCaml", "RayLib", "Functional Programming"]
+    },
+    {
+      title: "Alien Assassin",
+      image: AlienMockup,
+      date: "September 2021 - December 2021",
+      description: "Alien Infiltration is a classic arcade-style computer game reminiscent of the familiar alien invaders concept. Step into the cockpit of a spaceship as you face waves of alien foes, engaging in a simple and straightforward battle for survival.",
+      process: "I worked on Alien Assassin as the Final Project for CS 1110: Intro to Computing with Python. Collaborated with ",
+      skills: ["Python"],
+      collaborators: "Noelle Pappous",
+      collabLinks: "https://www.linkedin.com/in/noelle-pappous-985727240/"
     }
   ]
 
@@ -81,7 +108,13 @@ const ProjectsSection = () => {
       <br></br>
       <br></br>
       <ProjectModal show={modalVisible} closeModal={closeModal} project={projects[projectIndex]} />
-      <div id='projects'>
+      <p>Below is a spotlight some of the exciting and impactful projects I've worked on with information about their development. Each project represents a unique challenge and an opportunity to push the boundaries of my skills.</p>
+      <br></br>
+      <br></br>
+      <br></br>
+      <motion.div variants={projectAnimation}
+        initial="hidden"
+        whileInView="visible" id='projects'>
         <div className='project' onClick={() => updateModalVisible(1)}>
           <ProjectCell image={FridgeKeeperMockup} />
         </div>
@@ -97,10 +130,10 @@ const ProjectsSection = () => {
         <div className='project' onClick={() => updateModalVisible(4)}>
           <ProjectCell image={OScratchMockup} />
         </div>
-        <div className='project'>
+        <div className='project' onClick={() => updateModalVisible(5)}>
           <ProjectCell image={AlienMockup} />
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

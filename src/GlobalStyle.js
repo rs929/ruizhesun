@@ -19,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
 html {
     font-size: 16px;
     font-family: Georgia;
-    background-color: var(--background);
     text-align: left;
 }
 

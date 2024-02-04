@@ -1,6 +1,7 @@
 .projectCell {
   border-radius: 20px;
   transition: 0.5s;
+  background-color: #F9F9FE;
 
 
   img {

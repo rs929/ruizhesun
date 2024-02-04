@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
 import './projectModal.css'
+import { Link } from 'react-router-dom';
+import { MdClose } from 'react-icons/md'
 
 const ProjectModal = ({ show, closeModal, project }) => {
 
   const projectModal = (
-    <div className={show ? 'projectModal' : 'hidden'} onClick={closeModal}>
+    <div className={show ? 'projectModal' : 'hidden'}>
 
       <div className='modalContainer'>
         <img src={project.image}></img>
@@ -16,7 +18,7 @@ const ProjectModal = ({ show, closeModal, project }) => {
           <p>{project.description}</p>
           <br></br>
           <h5 id='subtitle'>Process</h5>
-          <p>{project.process}</p>
+          <p>{project.process}<Link to={project.collabLinks} target='_blank'><a>{project.collaborators}</a></Link></p>
           <br></br>
           <ul id='skillsList'>
             {project.skills.map((item, i) =>
@@ -24,6 +26,7 @@ const ProjectModal = ({ show, closeModal, project }) => {
             )}
           </ul>
         </div>
+        <MdClose onClick={closeModal} id='closeButton' />
       </div>
     </div >
   )
