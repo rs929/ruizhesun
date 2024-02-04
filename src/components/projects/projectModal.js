@@ -5,6 +5,7 @@ const ProjectModal = ({ show, closeModal, project }) => {
 
   const projectModal = (
     <div className={show ? 'projectModal' : 'hidden'} onClick={closeModal}>
+
       <div className='modalContainer'>
         <img src={project.image}></img>
         <div className='modalTextContent'>
