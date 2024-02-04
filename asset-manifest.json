@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ruizhesun/static/css/main.67593792.css",
-    "main.js": "/ruizhesun/static/js/main.cbf51fe4.js",
+    "main.css": "/ruizhesun/static/css/main.b718e371.css",
+    "main.js": "/ruizhesun/static/js/main.e372b490.js",
     "static/js/787.82373570.chunk.js": "/ruizhesun/static/js/787.82373570.chunk.js",
     "static/media/alienMockup.png": "/ruizhesun/static/media/alienMockup.ab0c08733b454878273d.png",
     "static/media/resellMockup.png": "/ruizhesun/static/media/resellMockup.43771a74fd9910f97342.png",
@@ -18,15 +18,17 @@
     "static/media/cornell.png": "/ruizhesun/static/media/cornell.38b41a9d981e2abad9e8.png",
     "static/media/AppDev.png": "/ruizhesun/static/media/AppDev.aff1b49e1042f43ed177.png",
     "static/media/ml.svg": "/ruizhesun/static/media/ml.51aa4d5ad6f33cbec18b96a63db7b33e.svg",
+    "static/media/rslogo2.svg": "/ruizhesun/static/media/rslogo2.4efc43307eccb1ff6305.svg",
+    "static/media/rslogo.svg": "/ruizhesun/static/media/rslogo.0ad2ec716df1ae7ea417.svg",
     "static/media/mobiledev.svg": "/ruizhesun/static/media/mobiledev.e5380339bcddb281e3d55dcad3c25929.svg",
     "static/media/webdev.svg": "/ruizhesun/static/media/webdev.b8d7563e2fd9fa29b99d080bad638df3.svg",
     "index.html": "/ruizhesun/index.html",
-    "main.67593792.css.map": "/ruizhesun/static/css/main.67593792.css.map",
-    "main.cbf51fe4.js.map": "/ruizhesun/static/js/main.cbf51fe4.js.map",
+    "main.b718e371.css.map": "/ruizhesun/static/css/main.b718e371.css.map",
+    "main.e372b490.js.map": "/ruizhesun/static/js/main.e372b490.js.map",
     "787.82373570.chunk.js.map": "/ruizhesun/static/js/787.82373570.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67593792.css",
-    "static/js/main.cbf51fe4.js"
+    "static/css/main.b718e371.css",
+    "static/js/main.e372b490.js"
   ]
 }
