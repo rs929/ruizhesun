@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './projectModal.css'
 import { Link } from 'react-router-dom';
 import { MdClose } from 'react-icons/md'
+import { FaGithub } from 'react-icons/fa';
 
 const ProjectModal = ({ show, closeModal, project }) => {
 
@@ -27,6 +28,9 @@ const ProjectModal = ({ show, closeModal, project }) => {
           </ul>
         </div>
         <MdClose onClick={closeModal} id='closeButton' />
+        <Link to={project.link} target='_blank'>
+          <FaGithub id='github' />
+        </Link>
       </div>
     </div >
   )

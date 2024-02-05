@@ -45,6 +45,30 @@
     width: 30px;
     height: 30px;
     color: gray;
+
+    &:hover {
+      color: red;
+      scale: 1.04;
+      transition: 0.5s;
+    }
+  }
+
+  #github {
+    bottom: 20px;
+    right: 20px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px gray;
+    fill: black;
+    margin: 10px;
+
+    &:hover {
+      fill: #6d78f3;
+      scale: 1.04;
+      transition: 0.5s;
+    }
   }
 }
 

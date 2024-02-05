@@ -41,7 +41,7 @@ const ConnectSection = () => {
           <IoIosMail className='footerIcon' />
         </Link>
       </motion.div>
-      <p>Copyright © Ruizhe Sun</p>
+      <p>Copyright © Ruizhe Sun 2023</p>
     </section>
   )
 }
