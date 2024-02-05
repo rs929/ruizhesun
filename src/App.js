@@ -8,6 +8,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import ProjectsSection from './components/projects/projects';
+import ConnectSection from './components/connect/connect';
 
 function App() {
 
@@ -48,9 +49,10 @@ function App() {
 
       <section id='projects'>
         <ProjectsSection />
-        <h3>--------------WORK IN PROGRESS--------------</h3>
-        <br></br><br></br>
-        <br></br><br></br>
+      </section>
+
+      <section id='connect'>
+        <ConnectSection />
       </section>
 
 
