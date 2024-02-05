@@ -50,3 +50,39 @@
     font-size: 20px;
   }
 }
+
+@media only screen and (max-width: 999px) {
+
+  .expCell {
+    #link {
+      width: 100px;
+      position: absolute;
+      right: 0px;
+      top: 10%;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 2%;
+    }
+  }
+
+  .expContent {
+    #title {
+      font-size: 20px;
+    }
+
+    #org {
+      font-size: 18px;
+    }
+
+    #date {
+      font-size: 18px;
+    }
+
+    #text {
+      font-size: 16px;
+    }
+  }
+}

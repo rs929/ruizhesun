@@ -10,3 +10,13 @@
 #skillsLang {
   background-color: #F0F1FC;
 }
+
+@media only screen and (max-width: 999px) {
+  #skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    gap: 20px;
+  }
+}
