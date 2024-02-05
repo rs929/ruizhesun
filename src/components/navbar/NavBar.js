@@ -26,12 +26,12 @@ export default function NavBar() {
             </a>
 
             <div className={showNav ? 'mobile-menu-icon hide-items' : 'mobile-menu-icon'} onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)} tabIndex={0}>
-                <MdMenu />
+                <MdMenu id='menubutton' />
             </div>
 
             <ul className={!showNav ? 'nav-items hide-items' : 'nav-items'}>
                 <div className='close-menu-icon' onClick={() => SetShowNav(!showNav)} role='button' onKeyDown={() => SetShowNav(!showNav)} tabIndex={0}>
-                    <MdClose />
+                    <MdClose id='closebutton' />
                 </div>
 
                 <li>

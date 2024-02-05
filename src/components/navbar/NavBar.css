@@ -53,6 +53,11 @@
         cursor: pointer;
         outline: none;
         display: none;
+
+        #menubutton {
+            width: 30px;
+            height: 30px;
+        }
     }
 
     .close-menu-icon {
@@ -83,12 +88,21 @@
 
             .close-menu-icon {
                 display: block;
-                width: 3rem;
                 margin: 0 0 0 auto;
                 cursor: pointer;
+                padding: 0;
+                width: 30px;
+                height: 30px;
 
                 * {
                     pointer-events: none;
+                }
+
+                #closebutton {
+                    margin: 0;
+                    padding: 0;
+                    width: 30px;
+                    height: 30px;
                 }
             }
 
