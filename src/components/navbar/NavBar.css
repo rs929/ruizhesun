@@ -31,7 +31,7 @@
 
         a {
             display: inline-block;
-            font-family: 'Georgia';
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             padding: 1rem 1rem;
             font-size: 1.5rem;
             color: var(--offblack);

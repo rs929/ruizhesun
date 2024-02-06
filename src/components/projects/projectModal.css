@@ -16,7 +16,7 @@
 }
 
 .hidden {
-  opacity: 0;
+  display: none;
 }
 
 .modalContainer {
@@ -81,29 +81,36 @@
   align-items: start;
 
   #title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: left;
     font-size: 28px;
   }
 
   #subtitle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: left;
     font-size: 20px;
+    padding-bottom: 10px;
   }
 
   #date {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: left;
     font-size: 20px;
     font-weight: normal;
+    padding-bottom: 20px;
   }
 
   p {
-    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
   }
 
   #skillsList {
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
 
     li {
       color: white;
@@ -112,7 +119,7 @@
       padding-left: 10px;
       padding-right: 10px;
       font-size: 20px;
-      border-radius: 50vw;
+      border-radius: 20px;
     }
   }
 

@@ -1,11 +1,12 @@
 .App {
   text-align: center;
-  font-family: Roboto;
+  font-family: Maitree;
   overflow: auto;
   background-color: #F9F9FE;
 
   p {
     color: #636363;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
 }
 

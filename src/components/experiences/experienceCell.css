@@ -3,8 +3,7 @@
   position: relative;
   flex-direction: row;
   border-radius: 20px;
-  border: 1px black solid;
-  box-shadow: 4px 4px 4px gray;
+  box-shadow: 1px 1px 1px 1px rgb(233, 233, 233);
   min-height: 250px;
   background-color: white;
 
@@ -31,22 +30,26 @@
   margin: 2%;
 
   #title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     color: black;
     font-size: 24px;
   }
 
   #org {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     font-size: 22px;
   }
 
   #date {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     font-size: 22px;
   }
 
   #text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
   }
 }

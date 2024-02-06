@@ -11,7 +11,7 @@
 
 .project {
   border-radius: 20px;
-  box-shadow: 4px 4px 4px 4px gray;
+  box-shadow: 1px 1px 1px 1px rgb(233, 233, 233);
   width: 30%;
   margin-bottom: 4%;
   position: relative;
