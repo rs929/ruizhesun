@@ -24,7 +24,7 @@ const Hero = () => {
                 <p className='introPara'>I am a current Junior studying Computer Science and minoring in Data Science at <span className='cornell'>Cornell University</span> with experience in Full-Stack Web and Mobile Development.</p>
                 <span className='experience1'></span>
             </div>
-            <img src={profileImage} alt='Profile' className={isHidden ? 'profile hidden' : 'profile shown'} onAnimationStart={unhide} />
+            <img src={profileImage} alt='Profile' className={isHidden ? 'profile hidden2' : 'profile shown'} onAnimationStart={unhide} />
 
         </section>
     )
