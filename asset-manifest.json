@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ruizhesun/static/css/main.ae20a968.css",
-    "main.js": "/ruizhesun/static/js/main.06a6a17d.js",
+    "main.css": "/ruizhesun/static/css/main.b0e2786f.css",
+    "main.js": "/ruizhesun/static/js/main.89e70f63.js",
     "static/js/787.82373570.chunk.js": "/ruizhesun/static/js/787.82373570.chunk.js",
     "static/media/alienMockup.png": "/ruizhesun/static/media/alienMockup.ab0c08733b454878273d.png",
     "static/media/resellMockup.png": "/ruizhesun/static/media/resellMockup.43771a74fd9910f97342.png",
@@ -24,12 +24,12 @@
     "static/media/mobiledev.svg": "/ruizhesun/static/media/mobiledev.e5380339bcddb281e3d55dcad3c25929.svg",
     "static/media/webdev.svg": "/ruizhesun/static/media/webdev.b8d7563e2fd9fa29b99d080bad638df3.svg",
     "index.html": "/ruizhesun/index.html",
-    "main.ae20a968.css.map": "/ruizhesun/static/css/main.ae20a968.css.map",
-    "main.06a6a17d.js.map": "/ruizhesun/static/js/main.06a6a17d.js.map",
+    "main.b0e2786f.css.map": "/ruizhesun/static/css/main.b0e2786f.css.map",
+    "main.89e70f63.js.map": "/ruizhesun/static/js/main.89e70f63.js.map",
     "787.82373570.chunk.js.map": "/ruizhesun/static/js/787.82373570.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae20a968.css",
-    "static/js/main.06a6a17d.js"
+    "static/css/main.b0e2786f.css",
+    "static/js/main.89e70f63.js"
   ]
 }
