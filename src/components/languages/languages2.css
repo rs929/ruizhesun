@@ -41,51 +41,55 @@
 }
 
 .icon:first-child {
-  transform: rotateY(calc(30deg * 1)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 1)) translateZ(400px);
 }
 
 .icon:nth-child(2) {
-  transform: rotateY(calc(30deg * 2)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 2)) translateZ(400px);
 }
 
 .icon:nth-child(3) {
-  transform: rotateY(calc(30deg * 3)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 3)) translateZ(400px);
 }
 
 .icon:nth-child(4) {
-  transform: rotateY(calc(30deg * 4)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 4)) translateZ(400px);
 }
 
 .icon:nth-child(5) {
-  transform: rotateY(calc(30deg * 5)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 5)) translateZ(400px);
 }
 
 .icon:nth-child(6) {
-  transform: rotateY(calc(30deg * 6)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 6)) translateZ(400px);
 }
 
 .icon:nth-child(7) {
-  transform: rotateY(calc(30deg * 7)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 7)) translateZ(400px);
 }
 
 .icon:nth-child(8) {
-  transform: rotateY(calc(30deg * 8)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 8)) translateZ(400px);
 }
 
 .icon:nth-child(9) {
-  transform: rotateY(calc(30deg * 9)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 9)) translateZ(400px);
 }
 
 .icon:nth-child(10) {
-  transform: rotateY(calc(30deg * 10)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 10)) translateZ(400px);
 }
 
 .icon:nth-child(11) {
-  transform: rotateY(calc(30deg * 11)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 11)) translateZ(400px);
 }
 
 .icon:nth-child(12) {
-  transform: rotateY(calc(30deg * 12)) translateZ(400px);
+  transform: rotateY(calc(27.7deg * 12)) translateZ(400px);
+}
+
+.icon:nth-child(13) {
+  transform: rotateY(calc(27.7deg * 13)) translateZ(400px);
 }
 
 @media only screen and (max-width: 999px) {

@@ -21,7 +21,7 @@ const Hero = () => {
                 <p className='hello' style={{ color: 'black' }}>Hello, My name is</p>
                 <p className='introText' style={{ color: 'black' }}>Ruizhe Sun</p>
                 <br></br>
-                <p className='introPara'>I am a current Junior studying Computer Science and minoring in Data Science at <span className='cornell'>Cornell University</span> with experience in Full-Stack Web and Mobile Development.</p>
+                <p className='introPara'>I am a current Senior studying Computer Science and minoring in Data Science at <span className='cornell'>Cornell University</span> with experience in Full-Stack Web and Mobile Development.</p>
                 <span className='experience1'></span>
             </div>
             <img src={profileImage} alt='Profile' className={isHidden ? 'profile hidden2' : 'profile shown'} onAnimationStart={unhide} />
