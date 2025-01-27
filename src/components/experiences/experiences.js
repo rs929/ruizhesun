@@ -55,7 +55,7 @@ const ExperienceSection = () => {
         </Link>
 
         <Link to="https://www.cs.cornell.edu/courses/cs1110/2023fa/" target='_blank'>
-          <ExperienceCell title="Consultant - CS 1110" org="Cornell University" date="Ithaca, NY | Sep 2022 - May 2023" text="Introduction to Computing: A Design and Development Perspective (FA22, SP23, FA23 - 500+ Students)." image={Cornell} />
+          <ExperienceCell title="Consultant - CS 1110" org="Cornell University" date="Ithaca, NY | Sep 2022 - Present" text="Introduction to Computing: A Design and Development Perspective (FA22, SP23, FA23 - 500+ Students)." image={Cornell} />
         </Link>
       </motion.div>
     </section>
