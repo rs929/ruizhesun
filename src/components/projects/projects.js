@@ -5,11 +5,10 @@ import { useInView } from "react-intersection-observer";
 import './projects.css'
 import ProjectCell from './projectCell.js'
 import ProjectModal from './projectModal.js'
-import Scooped from '../../assets/scooped.png'
 import ScoopedMockup from "../../assets/scoopedMockup.png"
 import FridgeKeeperMockup from "../../assets/fridgekeeperMockup.png"
 import ResellMockup from "../../assets/resellMockup.png"
-import PawCoachMockup from "../../assets/pawcoachMockup.png"
+import ByteBitesMockup from "../../assets/bytebitesmockup.png"
 import OScratchMockup from "../../assets/oscratchMockup.png"
 import AlienMockup from "../../assets/alienMockup.png"
 
@@ -58,13 +57,13 @@ const ProjectsSection = () => {
       link: "https://github.com/cuappdev/scoop-ios"
     },
     {
-      title: "FridgeKeeper",
+      title: "SousChef",
       image: FridgeKeeperMockup,
       date: "May 2022 - Present",
-      description: "Fridge Keeper is a user-friendly and innovative app that revolutionizes the way you manage your kitchen and cooking routines. This smart app helps you keep track of the items in your fridge and pantry and matches them with personalized recipes, making meal prep simple and sustainable.",
-      process: "I started FridgeKeeper summer of 2022 as a personal project based on a struggle that me and a lot of my friends and family face: cooking innovative dishes without having to run to the grocery store to buy extra groceries. Thus, I decided to start developing this project as a means to learn React.js, React Native, and fortify my skills in UIKit iOS Development.",
+      description: "SousChef is a user-friendly and innovative app that revolutionizes the way you manage your kitchen and cooking routines. This smart app helps you keep track of the items in your fridge and pantry and matches them with personalized recipes, making meal prep simple and sustainable.",
+      process: "I started SousChef summer of 2022 as a personal project based on a struggle that me and a lot of my friends and family face: cooking innovative dishes without having to run to the grocery store to buy extra groceries. Thus, I decided to start developing this project as a means to learn React.js, React Native, and fortify my skills in UIKit iOS Development.",
       skills: ["React.js", "React Native", "Swift", "UIKit", "Flask", "Python"],
-      link: "https://github.com/rs929/FridgeKeeper-React-Native"
+      link: "https://github.com/rs929/SousChef-Web"
     },
     {
       title: "Resell",
@@ -76,13 +75,13 @@ const ProjectsSection = () => {
       link: "https://github.com/cuappdev/resell-react-native"
     },
     {
-      title: "PawCoach",
-      image: PawCoachMockup,
-      date: "January 2023 - February 2023",
-      description: "PawCoach is a app designed for dog owners, trainers, and vets to help owners find the best trainer/vet suited for their dog, and to help trainers and vets find their clients. The app serves to inform users of behavioral traits, breeds, as well as proper documentation to best match them with their ideal trainer or vet.",
-      process: "I worked on PawCoach during the The Cornell SP23 Animal Health Hackathon. My contribution includes implementing the app's frontend which features: an articles view, dogs profile view, matches view, as well as a feed view where you can contact trainers/vets and even set up appointments or payment",
-      skills: ["Swift", "UIKit"],
-      link: "https://github.com/rs929/PawCoach-Front-End"
+      title: "ByteBites (SousChef-Model)",
+      image: ByteBitesMockup,
+      date: "August 2024 - Present",
+      description: "Byte Bites is an AI-powered application that generates custom recipes based on user-provided ingredients and images. By leveraging advanced transformer models and machine learning techniques, Byte Bites aims to revolutionize the cooking experience, enabling users to explore creative and coherent recipes with minimal effort.",
+      process: "As part of the Byte Bites project, I worked on developing an AI system that generates custom recipes based on user-provided ingredients and images. I gained hands-on experience with tools like PyTorch, Hugging Face Transformers, and spaCy to train and fine-tune models, including T5 for recipe generation. I also implemented contextual validation with BERT to ensure coherence and quality in generated recipes. Through this project, I learned the intricacies of training and fine-tuning transformers, including data preprocessing, tokenization strategies, hyperparameter tuning, and validation pipelines.",
+      skills: ["Python", "PyTorch", "Scikit-learn", "Swift", "SwiftUI"],
+      link: "https://github.com/rs929/SousChef-Model"
     },
     {
       title: "OScratch",
@@ -121,6 +120,9 @@ const ProjectsSection = () => {
       <motion.div variants={projectAnimation}
         initial="hidden"
         whileInView="visible" id='projects'>
+        <div className='project' onClick={() => updateModalVisible(3)}>
+          <ProjectCell image={ByteBitesMockup} />
+        </div>
         <div className='project' onClick={() => updateModalVisible(1)}>
           <ProjectCell image={FridgeKeeperMockup} />
         </div>
@@ -129,9 +131,6 @@ const ProjectsSection = () => {
         </div>
         <div className='project' onClick={() => updateModalVisible(0)}>
           <ProjectCell image={ScoopedMockup} />
-        </div>
-        <div className='project' onClick={() => updateModalVisible(3)}>
-          <ProjectCell image={PawCoachMockup} />
         </div>
         <div className='project' onClick={() => updateModalVisible(4)}>
           <ProjectCell image={OScratchMockup} />

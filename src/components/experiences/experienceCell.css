@@ -8,8 +8,8 @@
   background-color: white;
 
   &:hover {
-    scale: 1.04;
-    transition: 0.5s;
+    scale: 1.015;
+    transition: 0.3s;
   }
 
   #link {
