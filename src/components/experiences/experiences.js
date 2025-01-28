@@ -39,7 +39,7 @@ const ExperienceSection = () => {
         </Link>
 
         <Link to="https://www.cornellappdev.com" target='_blank'>
-          <ExperienceCell title="iOS Software Lead" org="Cornell AppDev" date="Ithaca, NY | Sep 2022 - Present" text="Led a team of developers in implementing and deploying iOS applications aimed to enhance student experience at Cornell. Implemented responsive user interfaces with backend integration8 using UIKit and SwiftUI frameworks" image={AppDev} />
+          <ExperienceCell title="iOS Software Lead" org="Cornell AppDev" date="Ithaca, NY | Sep 2022 - Present" text="Led a team of developers in implementing and deploying iOS applications aimed to enhance student experience at Cornell. Implemented responsive user interfaces with backend integration using UIKit and SwiftUI frameworks" image={AppDev} />
         </Link>
 
         <Link to="https://ios-course.cornellappdev.com/welcome/master" target='_blank'>

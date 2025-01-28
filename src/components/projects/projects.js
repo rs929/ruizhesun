@@ -9,6 +9,7 @@ import ScoopedMockup from "../../assets/scoopedMockup.png"
 import FridgeKeeperMockup from "../../assets/fridgekeeperMockup.png"
 import ResellMockup from "../../assets/resellMockup.png"
 import ByteBitesMockup from "../../assets/bytebitesmockup.png"
+import ByteBitesSmall from "../../assets/bytebitessmall.png"
 import OScratchMockup from "../../assets/oscratchMockup.png"
 import AlienMockup from "../../assets/alienMockup.png"
 
@@ -28,23 +29,6 @@ const ProjectsSection = () => {
       control.start("visible");
     }
   }, [control, inView]);
-
-  const updateModalVisible = (index) => {
-    console.log("CLICK")
-    if (modalVisible) {
-      setModalVisible(false)
-    } else {
-      setModalVisible(true)
-    }
-    setProjectIndex(index)
-  }
-
-  const closeModal = () => {
-    setModalVisible(false)
-  }
-
-
-
 
   const projects = [
     {
@@ -77,6 +61,7 @@ const ProjectsSection = () => {
     {
       title: "ByteBites (SousChef-Model)",
       image: ByteBitesMockup,
+      smallImage: ByteBitesSmall,
       date: "August 2024 - Present",
       description: "Byte Bites is an AI-powered application that generates custom recipes based on user-provided ingredients and images. By leveraging advanced transformer models and machine learning techniques, Byte Bites aims to revolutionize the cooking experience, enabling users to explore creative and coherent recipes with minimal effort.",
       process: "As part of the Byte Bites project, I worked on developing an AI system that generates custom recipes based on user-provided ingredients and images. I gained hands-on experience with tools like PyTorch, Hugging Face Transformers, and spaCy to train and fine-tune models, including T5 for recipe generation. I also implemented contextual validation with BERT to ensure coherence and quality in generated recipes. Through this project, I learned the intricacies of training and fine-tuning transformers, including data preprocessing, tokenization strategies, hyperparameter tuning, and validation pipelines.",
@@ -105,42 +90,44 @@ const ProjectsSection = () => {
     }
   ]
 
+  const updateModalVisible = (index) => {
+    setModalVisible(!modalVisible);
+    setProjectIndex(index);
+  };
+
+  const closeModal = () => {
+    setModalVisible(false);
+  };
+
   return (
-    <section className='projectSection'>
+    <section className="projectSection">
       <h1>Projects</h1>
       <br></br>
       <br></br>
       <br></br>
+      <ProjectModal
+        show={modalVisible}
+        closeModal={closeModal}
+        project={projects[projectIndex]}
+      />
+      <p>
+        Below is a spotlight of some of the exciting and impactful projects I've worked on with information about their development. Each project represents a unique challenge and an opportunity to push the boundaries of my skills.
+      </p>
       <br></br>
-      <ProjectModal show={modalVisible} closeModal={closeModal} project={projects[projectIndex]} />
-      <p>Below is a spotlight some of the exciting and impactful projects I've worked on with information about their development. Each project represents a unique challenge and an opportunity to push the boundaries of my skills.</p>
       <br></br>
-      <br></br>
-      <br></br>
-      <motion.div variants={projectAnimation}
-        initial="hidden"
-        whileInView="visible" id='projects'>
-        <div className='project' onClick={() => updateModalVisible(3)}>
-          <ProjectCell image={ByteBitesMockup} />
-        </div>
-        <div className='project' onClick={() => updateModalVisible(1)}>
-          <ProjectCell image={FridgeKeeperMockup} />
-        </div>
-        <div className='project' onClick={() => updateModalVisible(2)}>
-          <ProjectCell image={ResellMockup} />
-        </div>
-        <div className='project' onClick={() => updateModalVisible(0)}>
-          <ProjectCell image={ScoopedMockup} />
-        </div>
-        <div className='project' onClick={() => updateModalVisible(4)}>
-          <ProjectCell image={OScratchMockup} />
-        </div>
-        <div className='project' onClick={() => updateModalVisible(5)}>
-          <ProjectCell image={AlienMockup} />
-        </div>
+      <motion.div variants={projectAnimation} initial="hidden" whileInView="visible" id="projects">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="project"
+            onClick={() => updateModalVisible(index)}
+          >
+            <ProjectCell image={project.image} placeholder={project.smallImage} title={project.title} />
+          </div>
+        ))}
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
 export default ProjectsSection;

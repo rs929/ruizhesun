@@ -10,6 +10,7 @@
   &:hover {
     scale: 1.015;
     transition: 0.3s;
+    box-shadow: 2px 2px 2px 2px rgb(203, 203, 203);
   }
 
   #link {
